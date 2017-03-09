@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Storymap template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--add required stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+
+    <!--storymap stylesheet -->
+    <link rel="stylesheet" type="text/css" href="storymap.css" />
+
+    <!--facebook and info icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--add required libraries-->
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--add ajax based data transmission-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+    <!--storymap javascript library -->
+    <script src="storymap.js"></script>
+
+    <!--add favicon for the web page-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    </div>
+    <!--facebook icon-->
+    <a class="fa fa-facebook-square social" href="https://facebook.com/sharer.php?u=http://cdn.rawgit.com/jakobzhao/storymap/master/index.html" target="_blank"></a>
+    <!--info icon-->
+    <i class="fa fa-info-circle social" style="top:50px" data-toggle="modal" data-target="#info-modal"></i>
+
+    <!--the info page-->
+    <div class="modal fade" id="info-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    <p>There are many parks and trails around covallis to explore. This list highlights just a few, however, the parks listed here are perfect
+                    for taking dogs on. They have plenty of room and dogs are allowed off leash.</p>
+                    <p><b>Author:</b> Nathan Van Cleave | College of Earth, Ocean, Atmospheric Science | Oregon State University </p>
+                    <p><b>Willamette Park info:</b> | therighttrail.com | Retrieved on 3/2/2017 </p>
+                    <p><b>Martin Luther King Jr. Park:</b> | Corvallis Parks & Recreation | Retrieved on 3/2/2017 </p>
+                    <p><b>Chip Ross Park:</b> | therighttrail.com | Retrieved on 3/2/2017 </p>
+                    <p><b>Bald Hill Natural Area:</b> | Corvallis Parks & Recreation | Retrieved on 3/2/2017 </p>
+                    <p><b>Mary's Peak:</b> | therighttrail.com | Retrieved on 3/2/2017 </p>
+                    <p>The favicon image is my dog Jetta Jane</a></p>
+                    <p>This story map uses geospatial data from Mapbox.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 main">
+            <h2 class="page-header">Corvallis Parks<br/></h2>
+                <div class="subtitle">My favorite spots to take my two dogs</div>
+            <section data-scene="scene1">
+                <h2>Willamette Park and Natural Area</h2>
+                <p>This large park on the banks of the Willamette River has paved trails passing through sports fields and a frisbee golf course, along with natural-surfaced trails next to the river. Visitors can access the river at many points.
+
+                <p>                    Located at Crystal Lakes Sports park, this dirt trail provides and alternate route south to Willamette Park. The trail runs north-south along the western edge of the sports park. The trail goes through riparian plantings and is surprisingly isolated from the ball fields. The southern end of the trail connects with the Willamette Park soft trails.
+                </p>
+                <p>                    This trail can become muddy in wet weather. The Crystal Lake multi-modal trail provides a paved alternative running through the sports complex.</p>
+                </p>
+            </section>
+
+            <section data-scene="scene2">
+                <h2>Natural areas of Willamette Park</h2>
+                <p>Another popular feature of Willamette Park and Natural Area is that most of the park is designated as "off-leash" for dogs. Dogs are required to be on leash only in the picnic shelter, play ground and soccer field areas</p>
+            </section>
+            <section data scene="scene2.1">
+                <!--<img src="../img/1%20-%201%20(2).jpg">-->
+            </section>
+        
+            <section data-scene="scene3">
+                <h2>Martin Luther King Jr. Park</h2>
+                <p>The Martin Luther King Jr. Park features both landscaped playing fields and natural meadow areas with upland prairie and riparian habitats.  </p>
+                <p>There are many winding trails that cover the 29 acre park.</p>
+
+            </section>
+            <section data-scene="scene4">
+                <h2>Chip Ross Park</h2>
+                <p>Oak savannahs and prairie habitats are the background of many trails with beautiful views and an off leash dog-area (in Chip Ross Park). Trails on the east side of Chip Ross Park connect with Lower Dan's Trail, which visitors can follow into a vast network of trails and forest roads in McDonald Forest.
+                </p>
+                <p>This easy-to-moderate 1.5 mile loop trail is located in Chip Ross Park. The trail goes through lush forest and hilltop habitats of Upland Prairie and Oak Savannah. The park offers beautiful views of Corvallis, the Willamette Valley, the Coast Range, and the Cascade Mountains. Hikers and runners can also access the many miles of trails in adjacent McDonald Forest from here. Horseback riding and bicycling are permitted on seasonally designated trails. The park is a designated off-leash area for dogs and their humans to socialize and enjoy. There are picnic tables at the Lester Ave. trailhead.</p>
+                <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/pzLp_BQfvcw?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+            </section>
+            <section data-scene="scene5">
+                <h2>Bald Hill Natural Area</h2>
+                <p>Bald Hill Natural Area is a favorite of Corvallis residents. This park offers both a moderately level, 1.5 mile multi-modal path along the base of the hill and several miles of dirt and gravel foot trails that circle and climb to the summit of the hill, as well as connect to the Mulkey Creek trail and Fitton Green Natural Area. </p>
+                <p>The trails pass through varied habitats of upland prairie, oak savanna, oak woodlands, riparian areas and wetlands. Wildflowers are plentiful in the spring.
+                </p>
+            </section>
+            <section data-scene="scene6">
+                <h2>Mary's Peak</h2>
+                <p>Marys Peak, at 4,097 feet, is the highest point in Oregon’s Coast Range and the most prominent peak to the west of Corvallis.
+                </p>
+                <p>On a clear day, from the top of the peak, you can see both the Pacific Ocean to the west and many of the Cascade peaks to the east across the Willamette Valley.
+                </p>
+                <p>There are also several areas of historical, botanical and geological interest.
+                </p>
+                <p>When there's snow (not every winter), cross country skiing, snowshoeing and other non-motorized winter recreation are available.</p>
+            </section>
+            <section data-scene="scene7">
+                <h2>Mary's Peak views</h2>
+                <p>Red areas represent the area visible from Mary's Peak.
+                </p>
+            </section>
+            <section data-scene="scene8">
+                <h2>Mary's Peak views</h2>
+                <p>Red areas represent the area visible from Mary's Peak.
+                </p>
+            </section>
+            <section data-scene="scene9">
+                <h2>Mary's Peak views</h2>
+                <p>Red areas represent the area visible from Mary's Peak.
+                </p>
+            </section>
+            <section data-scene="scene10">
+                <h2>Mary's Peak views</h2>
+                <p>Red areas represent the area visible from Mary's Peak.
+                </p>
+            </section>
+            <div class="glyphicon glyphicon-chevron-down arrow-down"></div>
+        </div>
+
+        <div id="map" class="col-sm-6 col-md-8 sidebar"></div>
+<img htre
+    </div>
+
+</div>
+<script type="text/javascript">
+
+    var jetta = L.icon({
+        iconUrl: 'favicon.ico',
+
+        iconSize:     [20, 40], // size of the icon
+        iconAnchor:   [20, 40], // point of the icon which will correspond to marker's location
+        popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    });
+
+    var maryspeak = L.icon({
+        iconUrl: 'favicon.ico',
+        iconSize:   [20, 40]
+    })
+
+    var layers = {
+        'layer 1': [ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {id: 'mapbox.satellite'}), ],
+        'layer 2': [ L.tileLayer('https://api.mapbox.com/styles/v1/nathanvc/cirx29kh00057gam862ziifyc/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmF0aGFudmMiLCJhIjoiY2lyeDI3dzU2MDA2eTJ6b2Zzc3o0aHYyZCJ9.uz49BJJoY2WmlDqeNw7SlQ', {detectRetina: true, color: 'orange', weight: 5}), '<i style="background: greenyellow; opacity: 0.5"></i><p><b>Park Boundary</b></p>'],
+        'viewshed': [ L.geoJson.ajax('viewshed.geojson',  {
+            color: 'red',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1})],
+        'jetta': [ L.marker([44.606739, -123.284773])],
+        'maryspeak': [ L.marker([44.504316, -123.552467])]
+
+    };
+
+    var scenes = {
+        scene1: {lat: 44.5462429, lng: -123.2511819, zoom: 16, layers: ['layer 2']},
+        scene2: {lat: 44.542352, lng: -123.2499503, zoom: 17, layers: ['layer 2']},
+        scene3: {lat: 44.5929598, lng: -123.3149774, zoom: 17, layers: ['layer 2']},
+        scene4: {lat: 44.6092061, lng: -123.2879302, zoom: 16, layers: ['layer 2', 'jetta']},
+        scene5: {lat: 44.566436, lng: -123.3373404, zoom: 16, layers: ['layer 2']},
+        scene6: {lat: 44.5072519, lng: -123.5606227, zoom: 16, layers: ['layer 1','maryspeak']},
+        scene7: {lat: 44.5072519, lng: -123.5606227, zoom: 15, layers: ['layer 1','viewshed','maryspeak']},
+        scene8: {lat: 44.5072519, lng: -123.5606227, zoom: 13, layers: ['layer 1','viewshed','maryspeak']},
+        scene9: {lat: 44.5072519, lng: -123.5606227, zoom: 12, layers: ['layer 1','viewshed','maryspeak']},
+        scene10: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 1','viewshed','maryspeak']},
+    };
+
+    $('.main').storymap({
+        scenes: scenes,
+        layers: layers,
+        legend: true
+    });
+
+
+</script>
+</body>
+</html>
